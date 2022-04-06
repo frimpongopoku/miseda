@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+}
+
+.container {
+    margin: 0 5em;
+}
+
+.row-container {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+}
+
+.right-div {
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    background: green;
+    flex: 1;
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(Pics/Cinema.jpg);
+}
+
+body {
+    /* background: #282828; */
+    /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(Pics/Cinema.jpg); */
+    /* background-size: 600px 625px;
+    background-repeat: no-repeat;
+    background-position: top right; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav ul.nav-list {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-left: 17px;
+    display: inline-block;
+    padding-bottom: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #bc2525;
+    bottom: 0px;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul li a:hover:after {
+    left: 0;
+}
+
+.nav ul li a button {
+    width: 90px;
+    height: 35px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #bc2525;
+    box-shadow: inset black;
+    border: none;
+    margin-right: 0px;
+}
+
+.logo a img {
+    width: 130px;
+}
+
+.intro-wrapper {
+    padding: 30px;
+}
+
+.intro {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    display: flex;
+    width: 81%;
+}
+
+.heading {
+    margin: 0 0.3em;
+    font-family: "Noto Sans TC", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 3px;
+    margin-bottom: 7%;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 25px 0;
+    display: block;
+    border: 1px solid rgb(179, 171, 171);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+form button {
+    background-color: #bc2525;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.forgot {
+    margin: 20px 0px;
+    font-size: 10px;
+}
+
+span.psw {
+    padding: 0 0 0 163px;
+}
+
+form a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.to-sign-up p a {
+    font-weight: bold;
+    color: black;
+}
+
+.to-sign-up p {
+    font-size: 11px;
+    font-weight: 550;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-color: #ffffff;
+        background-image: none;
+    }
+    .nav ul li {
+        display: block;
+    }
+    .nav ul li a {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 30px;
+        color: black;
+        margin-left: 17px;
+        display: inline-block;
+        padding-bottom: 7px;
+        position: relative;
+        overflow: hidden;
+    }
+    .intro {
+        display: none;
+    }
+    .header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        text-align: center;
+        margin-left: -30px;
+    }
+    .logo a img {
+        width: 100px;
+        margin-left: 60px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 25px 0;
+        display: block;
+        border: 1px solid rgb(179, 171, 171);
+        box-sizing: border-box;
+        border-radius: 7px;
+    }
+    .heading {
+        font-size: 15px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .forgot {
+        display: none;
+    }
+    form button {
+        background-color: #bc2525;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        font-weight: 700;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .to-sign-up {
+        display: none;
+    }
+}

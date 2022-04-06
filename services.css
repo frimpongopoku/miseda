@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+
+.container{
+    margin:0 5em;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px ;
+}
+
+
+.logo a img{
+    width: 130px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    background-color: white; /* Green */
+    border: 2px solid #f44336;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+    margin: 20px 240px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+  }
+.btn1 :hover{
+    background-color: #e68f86;
+    color: white;
+}
+.btn2 :hover{
+    background-color: #e68f86;
+    color: white;
+}
+
+.btn3 :hover{
+    background-color: #e68f86;
+    color: white;
+}
+
+.btn4 :hover{
+    background-color: #e68f86;
+    color: white;
+}
+
+.btn5 :hover{
+    background-color: #e68f86;
+    color: white;
+}
+
+
+.button img{
+    width: 7%;
+    float: left;
+    margin: -19px 0px;
+}
+
+.button a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f44336;
+    text-align: center;
+
+}
+
+.btn2 img{
+    margin: -13px 0px;
+}
+
+.btn3 img{
+    margin: -12px -2px;
+}
+
+.btn4 img{
+    margin: -13px 0px;
+}
+
+.btn5 img{
+    margin: -10px -1px;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   
+
+.intro{
+    display: none;
+}
+
+.header{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px ;
+    text-align: center;
+    margin-left: -30px;
+}
+
+.logo a img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+    
+
+.heading{
+    font-size: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+    
+.forgot{
+    display: none;
+}
+    
+
+.all-buttons{
+    margin-left: -265px;
+}
+
+.btn2 img{
+    margin: -10px 0px;
+}
+
+.btn3 img{
+    margin: -12px -2px;
+}
+
+.btn4 img{
+    margin: -13px 0px;
+}
+
+.btn5 img{
+    margin: -10px -1px;
+}
+
+.button img{
+    width: 10%;
+    float: left;
+    margin: -8px 0px;
+}
+
+}

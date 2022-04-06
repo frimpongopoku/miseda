@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+
+.container{
+    margin:0 5em;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px ;
+}
+
+
+.logo a img{
+    width: 130px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -95px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text a button{
+    text-decoration: none;
+    color: #0f0e0e;
+    width: 70%;
+    height: 45px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #bc2525;
+    box-shadow: inset black;
+    border: none;
+    margin: 50px 56.5px;
+    padding: 14px 20px;
+    cursor: pointer;
+    
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   
+
+    .intro{
+        display: none;
+    }
+
+    .header{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px ;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    .logo a img{
+        width: 100px;
+        margin-left: 20px;
+    }
+
+        
+  
+      .heading{
+          font-size: 10px;
+          margin-top: 80px;
+          margin-bottom: 50px;
+      }
+      
+      .forgot{
+          display: none;
+      }
+
+        .country-btn{
+          margin-left: -20px;
+        }
+    
+
+}
+
